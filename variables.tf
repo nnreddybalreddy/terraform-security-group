@@ -1,17 +1,17 @@
 variable "project_name" {
-  type=string
+  type = string
 }
 
 variable "environment" {
-  default = "dev"
+  type = string
 }
 
 variable "sg_name" {
-  type=string
+  type = string
 }
 
 variable "sg_description" {
-  type=string
+  type = string
 }
 
 variable "vpc_id" {
@@ -26,7 +26,6 @@ variable "sg_tags" {
   type = map
   default = {}
 }
-
 
 variable "outbound_rules" {
   type = list
